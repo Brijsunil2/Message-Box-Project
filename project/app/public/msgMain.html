@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../css/mainstyle.css" />
+        <title>MessageBox</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="client.js"></script>
+    </head>
+
+    <body>
+        <header><h1>MessageBox</h1></header>
+        <div id="innerBg">
+            <h2>Create Forum</h2>
+            <div id="createForumArea">
+                <input type="text" id="nameIn" placeholder="Forum Name"/> 
+                <input type="button" id="createBtn" value="Create" />
+            </div>
+
+            <h2>Forums</h2>
+            <div id="forumList">
+                <table id="forumTb">
+                    <tr>
+                        <thead>
+                            <th>Author</th>
+                            <th>Forum Name</td>
+                            <th>Date Created</th>
+                        </thead>
+                        <tbody id="forumTbb">
+
+                        </tbody>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 id="forumNameH"></h2>
+            <div id="forumMsgArea" style="display:none">
+                <div id="msgs">
+                    <textarea id="enterMsgArea" placeholder="Message"></textarea>
+                    <br> 
+                    <input type="button" id="sendBtn" value="Send" />
+                </div>
+    
+                <div id="allMsgArea"></div>
+            </div>
+        </div>
+    </body>
+</html>

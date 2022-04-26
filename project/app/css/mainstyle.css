@@ -1,0 +1,135 @@
+* {
+    font-family: monospace, monospace;
+    /*font-family: Helvetica;*/
+}
+
+body {
+    color: #000000;
+    margin: 0px;
+    background-color: #696969;
+}
+ 
+#innerBg {
+    background-color: #F7FAFF;
+    margin: 0px 10%;
+    padding: 10px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #343434;
+}
+
+#forumTb {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#createForumArea, #forumList, #msgs, #allMsgArea {
+    background-color: #ececec;
+    padding: 10px;
+    margin:10px;
+}
+
+/* Modifed for application, general code up to dashed line from: */
+/*https://codepen.io/pdg/pen/MayBJK*/
+
+table {
+    display: block;
+}
+  
+table thead { 
+    position:relative;
+    display: block;
+    width:100%;
+}
+  
+table tbody{
+    display: block; 
+    position:relative;
+    width:100%; 
+    overflow-y:scroll;
+}
+  
+table tr {
+    width: 100%;
+    display:flex;
+}
+  
+table td, table th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+}
+
+/*------------------------------------------*/
+
+tbody {
+    max-height: 200px;
+}
+
+h4 {
+    padding: 4px;
+    margin: 0px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 7px;
+}
+
+tr:nth-child(even){
+    background-color: #DFDFDF;
+}
+
+tr:hover {
+    background-color: rgb(199, 198, 198);
+}
+
+th {
+    text-align: center;
+    background-color: rgb(177, 177, 177);
+}
+
+textArea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 0px;
+    white-space: pre-wrap;
+}
+
+#sendBtn, #createBtn {
+    background-color: #b6b6b6; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+#nameIn {
+    padding: 3px 0px;
+    width: 80%;
+    white-space: pre-wrap;
+}
+
+
+#allMsgArea {
+    display: block;
+    white-space: pre-wrap;
+    overflow: scroll;
+}
+
