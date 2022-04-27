@@ -115,7 +115,7 @@ wsServer.on('request', function (request) {
 
                 var jsonMsg = JSON.stringify({ type: 'forumReq', data: result });
                 conn.sendUTF(jsonMsg);
-                console.log(result);
+                //console.log(result);
                 db.close();
             });
         });
@@ -133,9 +133,10 @@ wsServer.on('request', function (request) {
             var myobj = { name: fname , username: username , fDateTime: date.toString() };
             dbo.collection("forums").insertOne(myobj, function(err, res) {
                 if (err) throw err;
-
+                
+                var arr = [myobj];
                 dbo.collection("forums").find(myobj).toArray(function(err, result) {
-                    var jsonMsg = JSON.stringify({ type: 'forumCreate', data: result });
+                    var jsonMsg = JSON.stringify({ type: 'forumCreate', data: arr });
                     for (var i=0; i < clients.length; i++) {
                         clients[i].sendUTF(jsonMsg);
                     }
