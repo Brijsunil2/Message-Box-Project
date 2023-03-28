@@ -1,16 +1,15 @@
 * {
-    font-family: monospace, monospace;
-    /*font-family: Helvetica;*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     color: #000000;
     margin: 0px;
-    background-color: #696969;
+    background-color: #ececec;
 }
  
 #innerBg {
-    background-color: #F7FAFF;
+    background-color: #faf9ff;
     margin: 0px 10%;
     padding: 10px;
 }
@@ -30,7 +29,7 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    background-color: #343434;
+    background-color: #bdbdbd;
 }
 
 #forumTb {
@@ -39,7 +38,7 @@ header {
 }
 
 #createForumArea, #forumList, #msgs, #allMsgArea {
-    background-color: #ececec;
+    background-color: #ffffff;
     padding: 10px;
     margin:10px;
 }
@@ -101,7 +100,7 @@ tr:hover {
 
 th {
     text-align: center;
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(223, 223, 223);
 }
 
 textArea {
@@ -112,7 +111,7 @@ textArea {
 }
 
 #sendBtn, #createBtn {
-    background-color: #b6b6b6; 
+    background-color: #d4d4d4; 
     border: none;
     text-align: center;
     text-decoration: none;
